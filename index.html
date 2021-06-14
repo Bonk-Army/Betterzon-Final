@@ -1,0 +1,565 @@
+<!doctype html>
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.======.\ ' J
+                         "-.   "__"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..-=  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico">
+
+    <title>Betterzon - Final Presentation</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="scriptsVARIABLES">
+    <script>
+        let maintainer = "&#128295;"; // 🔧
+        let headOfIT = "&#128081;"; // 👑
+        let businessClient = "&#128188;"; // 💼
+        let clientUser = "&#128118;"; // 👶
+
+        let paddyIcon = "&#128024;"; // 🐘
+        let henningIcon = "&#129433;"; // 🦙
+        let jegorIcon = "&#128373;"; // 🕵️
+    </script>
+</div>
+<div class="reveal">
+    <!-- Footer && <Header -->
+    <style>
+        .reveal .footer {
+            position: absolute;
+            bottom: 1em;
+            left: 1em;
+            font-size: 0.5em;
+        }
+        .header{
+            position: absolute;
+            top: 1em;
+            right : 1em;
+        }
+        .troll{
+            position: absolute;
+            top: 10px;
+            right : 10px;
+            font-size: 12px;
+        }
+        .persons{
+            position: absolute;
+            top: 20px;
+            left : 15px;
+        }
+        h1,h2,h3,h4,h5,h6{
+            padding-top: 2%;
+        }
+    </style>
+    <div class='footer'>
+        TINF19B4 <br>
+        18.06.2021 <br>
+        Patrick Müller, Georg Reichert & Henning Sextro
+    </div>
+    <div id="troll" class='troll'></div>
+    <div id="header" class="header">
+    </div>
+    <div id="persons" class="persons"><script>document.write(henningIcon)</script></div>
+    <!-- Slides -->
+    <div class="slides" id="introduction">
+        <!-- Introduction -->
+        <section>
+            <h2> ❤️Welcome to our<br> final presentation</h2>
+            <p>
+                <img style="width: 50%" src="resources/Betterzon.svg">
+            </p>
+        </section>
+        <!-- Disclaimer -->
+        <section>
+            <h2>Disclaimer</h2>
+            <p>
+                This template was created <u>by and for</u> the groups from <u><a href="https://taskhub854228916.wordpress.com/">TaskHub</a></u>, <u><a href="https://blog.betterzon.xyz">Betterzon</a></u> and <u><a href="https://blog.plantshub.de">PlantsHub</a></u>.
+            </p>
+        </section>
+        <!-- ToC for Business needs-->
+        <section>
+            <h2 style="padding-top: 1%"><a href="https://kay.fasten-your-seat-belts.de/my-courses/software-engineering/1638/">Contents - understanding your business</a></h2>
+            <ol type="1" style="font-size:60%;">
+                <li>Our project</li>
+                <ol>
+                    <li>Our vision</li>
+                    <li>Use cases (incl. scopes)</li>
+                    <li>SRS</li>
+                    <li>nonfunctional</li>
+                    <li>Scope</li>
+                </ol>
+                <li>Project methodology</li>
+                <li>Project managememt</li>
+                <ol>
+                    <li>RUP + burndown</li>
+                    <li>Long term planning</li>
+                    <li>Scrumming</li>
+                    <li>Iterative process</li>
+                    <li>Cost estimation</li>
+                </ol>
+            </ol>
+        </section>
+        <!--- Toc for technical Ability--->
+        <section>
+            <h2 style="padding-top: 1%"><a href="https://kay.fasten-your-seat-belts.de/my-courses/software-engineering/1638/">Contents - technical ability</a></h2>
+            <ol type="1" style="font-size:60%;">
+                <li>Live-demo</li>
+                <ol>
+                    <li>Tools we used</li>
+                    <li>Live-demo</li>
+                </ol>
+                <li>Extend of functionality</li>
+                <li>Visual representation of code and architecture</li>
+            </ol>
+        </section>
+        <!--- Toc for Quality--->
+        <section>
+            <h2 style="padding-top: 1%"><a href="https://kay.fasten-your-seat-belts.de/my-courses/software-engineering/1638/">Contents - Quality</a></h2>
+            <ol type="1" style="font-size:60%;">
+                <li>Architecture</li>
+                <li>Configuration</li>
+                <ol>
+                    <li>Automation</li>
+                    <li>Continous integration</li>
+                </ol>
+                <li>Risk management</li>
+                <li>Testing</li>
+                <li>Patterns</li>
+                <li>Metrics</li>
+            </ol>
+        </section>
+        <!-- Addressed Person -->
+        <section>
+            <h3>Seperation</h3>
+            <p>
+                Every symbol stands for one person in this room which is addresed in the slide. They are shown in the top-right corner.
+            <ul style="list-style-type: none">
+                <li><script>document.write(maintainer)</script> &#8594; Maintaining your code</li>
+                <li><script>document.write(headOfIT)</script> &#8594; Head of IT</li>
+                <li><script>document.write(businessClient)</script> &#8594; Business client</li>
+                <li><script>document.write(clientUser)</script> &#8594; Client user</li>
+            </ul>
+            </p>
+        </section>
+        <!-- Speaking Person -->
+        <section>
+            <h3>Speaker</h3>
+            <p>
+                &#8598; Every symbol stands for one speaker
+            <ul style="list-style-type: none">
+                <li><script>document.write(henningIcon)</script> &#8594; Patrick Müller</li>
+                <li><script>document.write(paddyIcon)</script> &#8594; Georg Reichert</li>
+                <li><script>document.write(jegorIcon)</script> &#8594; Henning Sextro</li>
+            </ul>
+            </p>
+        </section>
+    </div>
+    <!--
+     _______  ______  __________________   _______  _______
+    (  ____ \(  __  \ \__   __/\__   __/  (       )(  ____ \
+    | (    \/| (  \  )   ) (      ) (     | () () || (    \/
+    | (__    | |   ) |   | |      | |     | || || || (__
+    |  __)   | |   | |   | |      | |     | |(_)| ||  __)
+    | (      | |   ) |   | |      | |     | |   | || (
+    | (____/\| (__/  )___) (___   | |     | )   ( || (____/\
+    (_______/(______/ \_______/   )_(     |/     \|(_______/
+    -->
+    <div class="slides" id="Understand your business needs">
+        <section>
+            <h1>1. Understanding YOUR business needs</h1>
+        </section>
+        <section>
+            <section>
+                <h2>1.1 Our project</h2>
+            </section>
+            <section>
+                <h2><a href="https://taskhub854228916.wordpress.com/2020/10/01/first-steps/">1.1.1 Our vision &#128302;</a></h2>
+                <br>
+                <ul>
+                    <li>Collaborate app</li>
+                    <li>Simultaneously editing or creating files</li>
+                    <li>Task management</li>
+                    <li>Setting deadlines</li>
+                </ul>
+                <p>
+                    inspired by a <a href="https://github.com/StratumAuhuur/CTFPad">CTF Tool from StratumArthuut</a>
+                </p>
+            </section>
+            <section>
+                <img style="width: 70%;padding-top: 2%" src="https://stratum0.org/mediawiki/images/b/b1/CTF_Pad.png">
+            </section>
+            <section>
+                <h2 ><a href="https://taskhub854228916.wordpress.com/2020/10/22/0%ef%b8%8f%e2%83%a34%ef%b8%8f%e2%83%a3-%f0%9f%a7%90-use-case-specification/">1.1.2 Use cases (incl. scopes)</a></h2>
+                <a href="https://raw.githubusercontent.com/Unk3wn/TaskHub---Documentation/master/UML/TaskHubUML.png">
+                    <img width="20%" src="https://raw.githubusercontent.com/Unk3wn/TaskHub---Documentation/master/UML/TaskHubUML.png">
+                </a>
+            </section>
+            <section>
+                <h2 ><a href="https://taskhub854228916.wordpress.com/2020/10/15/0%ef%b8%8f%e2%83%a33%ef%b8%8f%e2%83%a3-srs-and-ucd/">1.1.3 SRS</a></h2>
+                <a href="https://github.com/Unk3wn/TaskHub---Documentation" ><img src="resources/srs.png"></a>
+            </section>
+            <section>
+                <h2>1.1.4 non-functional</h2>
+                <ul>
+                    <li class="fragment" data-fragment-index="1">Easy to understand</li>
+                    <li class="fragment" data-fragment-index="2">No overloaded features/UI</li>
+                    <li class="fragment" data-fragment-index="3">Backup features</li>
+                    <li class="fragment" data-fragment-index="4">Very fast</li>
+                    <li class="fragment" data-fragment-index="5">Lightning speed performance</li>
+                    <li class="fragment" data-fragment-index="6">Lightweight</li>
+                    <li class="fragment" data-fragment-index="7">Minimalistic</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>1.2. Project methodology</h2>
+            </section>
+            <section>
+                <h2 >Scrum</h2>
+                <p>
+                    For our project methodology we use the commonly used methodology of <u>scrum</u>
+                </p>
+                <img class="fragment" data-fragment-index="2" style="width: 80%" src="https://bvik.org/wp-content/uploads/2019/08/SCRUM-Methode.jpg">
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>1.3 Project management</h2>
+                <br>
+                <a href="https://dhbw-karlsruhe.myjetbrains.com/youtrack/dashboard?id=17a3c555-0b27-4f1f-814a-253a49456414"><img style="width: 20%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/YouTrack_Icon.svg/800px-YouTrack_Icon.svg.png"></a>
+            </section>
+            <section>
+                <h2 >1.3.1 RUP</h2>
+                <h3>RUP for the first semester</h3>
+                <img style="width: 40%" src="resources/final/burndown1semester.png">
+            </section>
+            <section>
+                <h2 >1.3.1 RUP</h2>
+                <h3>RUP for the secound semester</h3>
+                <img style="width: 40%" src="resources/final/burndown2semester.png">
+            </section>
+            <section>
+                <h2>1.3.2 Scrumming</h2>
+                <img width="80%" src="resources/scrum.png">
+            </section>
+            <section>
+                <h2>1.3.2 Scrumming</h2>
+                <h3>First sprint 06.11.2020 - 16.11.2020</h3>
+                <img width="40%" src="resources/final/burndown1.png">
+            </section>
+            <section>
+                <h2>1.3.2 Scrumming</h2>
+                <h3>Secound sprint 20.11.2020 - 27.11.2020</h3>
+                <img width="40%" src="resources/final/burndown2.png">
+            </section>
+            <section>
+                <h2>1.3.2 Scrumming</h2>
+                <h3>Third sprint 03.05.2021 - 10.05.2021</h3>
+                <img width="40%" src="resources/final/burndown3.png">
+            </section>
+            <section>
+                <h2>1.4 Iterative process</h2>
+                <p>With scrum we are following an iterative process, which adjusts itself on every elaboration</p>
+                <img src="https://www.geckoboard.com/blog/content/images/the-dashboard-iteration-process.png">
+            </section>
+            <section>
+                <h2>1.4.1 Why we choose an iterative process</h2>
+                <ul>
+                    <li>constant comparison with the requirements</li>
+                    <ul style="list-style-type: none;">
+                        <li>➜ high quality</li>
+                    </ul>
+                    <li>Low risk</li>
+                    <li>Test possible after each iteration of the product</li>
+                    <li>Fast results</li>
+                </ul>
+                <aside class="notes">
+                    📝 <a href="https://www.repetico.de/card-66612867">Source</a>
+                </aside>
+            </section>
+            <section>
+                <h2>1.5 Cost estamination</h2>
+                <img src="resources/final/functionPoints.png"> <br>
+                <ul style="list-style-type: none">
+                   <li>Two UC( 7 & 10) are over the estimation</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    <div class="slides" id="Technical ability">
+        <section>
+            <h1>2. Technical ability</h1>
+        </section>
+        <section>
+            <section>
+                <h2>2.1 Live-demo</h2>
+            </section>
+            <section>
+                <h2>2.1.1 Tools we used</h2>
+                <ul>
+                    <li>Git - <img style="width: 10%;" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"></li>
+                    <li>IntelliJ - <img style="width: 10%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/800px-IntelliJ_IDEA_Icon.svg.png"></li>
+                    <li>YouTrack - <a href="https://dhbw-karlsruhe.myjetbrains.com/youtrack/dashboard?id=17a3c555-0b27-4f1f-814a-253a49456414"><img style="width: 10%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/YouTrack_Icon.svg/800px-YouTrack_Icon.svg.png"></a></li>
+                    <li>Postman - <img style="width: 10%" src="https://www.pngjoy.com/pngl/776/9228516_ubuntu-logo-postman-tool-transparent-png.png"></li>
+                </ul>
+            </section>
+            <section>
+                <h2 style="margin-top: 3%">2.1.2 Live-demo with Fred</h2>
+                <a href="http://localhost:4200" target="_blank"><img src="https://webdevolutions.blob.core.windows.net/web/common/images/icons/sys-live-demo-en.png"></a><br>
+                <a href="https://localhost:8088"> ⬆️this is Fred</a>
+            </section>
+            <section>
+                <h2>2.2 Extend of functionality</h2>
+            </section>
+            <section>
+                <h2>2.2.1 Extend of functionality - backend</h2>
+                <ul>
+                    <li>we are using frameworks to sync our database / Sequelize</li>
+                    <ol style="list-style: none">
+                        <li>➾ Easy to add tables and objects</li>
+                    </ol>
+                    <li>we are using best practices to design our APIs and services</li>
+                    <ol style="list-style: none">
+                        <li>➾ Easy to understand and extend</li>
+                    </ol>
+                    <li>NPM as a package manager</li>
+                    <ol style="list-style: none">
+                        <li>➾ Easy to add more packages</li>
+                    </ol>
+                </ul>
+            </section>
+            <section>
+                <h2>2.2.2 Extend of functionality - frontend</h2>
+                <ul style="list-style: none;">
+                    <li>TODO DANNY</li>
+                </ul>
+            </section>
+            <section>
+                <h2>2.3 Visualisation of our code</h2>
+                TODO TOMORROW
+            </section>
+        </section>
+    </div>
+    <div class="slides" id="Quality">
+        <section>
+            <h1>3. Quality</h1>
+        </section>
+        <section>
+            <h2 >3.1 Architecture</h2>
+            <a href="https://github.com/Unk3wn/TaskHub---Documentation/blob/master/SAD.md">
+                <img src="resources/SAD.png">
+            </a>
+        </section>
+        <section>
+            <section>
+                <h2>3.2 Configuration</h2>
+            </section>
+            <section>
+                <h2>3.2.1 Automation</h2>
+            </section>
+            <section>
+                <h2>3.2.2 Continous integration</h2>
+            </section>
+        </section>
+        <section>
+            <h2>3.3 Risk management</h2>
+        </section>
+        <section>
+            <h2>3.4 Testing</h2>
+            <br>
+            <img width="50%" src="https://www.englishfireplaces.co.uk/wp-content/uploads/2018/12/coming-soon.png">
+        </section>
+        <section>
+            <h2>3.5 Patterns</h2>
+        </section>
+        <section>
+            <h2>3.6 Metrics</h2>
+        </section>
+    </div>
+    <div class="slides" id="HandourOverwiew">
+        <!-- Headerfolie -->
+        <section>
+            <h1>&#128269; Out of Scope</h1>
+            <h1>&#128221; Handout</h1>
+        </section>
+        <!-- Time Overwiew -->
+        <section>
+            <h1>Time Overview</h1>
+            <table class="table table-dark table-hover" style="width: 80%">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Second Name</th>
+                    <th scope="col">E-Mail</th>
+                    <th scope="col">Project(hours)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Kristin</th>
+                    <td>Agne</td>
+                    <td>agne.kristin@student.dhbw-karlsruhe.de</td>
+                    <td style="text-align: right">~ 45</td>
+                </tr>
+                <tr>
+                    <th class="table-info" scope="row" colspan="4" style="text-align: right">Blog, Github Administration, Peer Review, Organisation</th>
+                </tr>
+                <tr>
+                    <th scope="row">Danny</th>
+                    <td>Kroll</td>
+                    <td>kroll.danny@student.dhbw-karlsruhe.de</td>
+                    <td style="text-align: right">~ 50</td>
+                </tr>
+                <tr>
+                    <th class="table-info" scope="row" colspan="4" style="text-align: right">Angular Frontend, YouTrack, Project Management, Midterm Presentation</th>
+                </tr>
+                <tr>
+                    <th scope="row">Nico</th>
+                    <td>Holzhäuser</td>
+                    <td>holzhaeuser.nico@student.dhbw-karlsruhe.de</td>
+                    <td style="text-align: right">~ 60</td>
+                </tr>
+                <tr>
+                    <th class="table-info" scope="row" colspan="4" style="text-align: right">Infrastructure, Backend, Docker, Database</th>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- UCD -->
+        <section>
+            <h1>Use case diagramm</h1>
+            <a href="https://raw.githubusercontent.com/Unk3wn/TaskHub---Documentation/master/UML/TaskHubUML.png">
+                <img width="20%" src="https://raw.githubusercontent.com/Unk3wn/TaskHub---Documentation/master/UML/TaskHubUML.png" onclick="">
+            </a>
+        </section>
+        <!-- Print it -->
+        <section>
+            <script>
+                let print = (doc) => {
+                    let objFra = document.createElement('iframe');     // Create an IFrame.
+                    objFra.style.visibility = 'hidden';                // Hide the frame.
+                    objFra.src = doc;                   // Set source.
+                    document.body.appendChild(objFra);  // Add the frame to the web page.
+                    objFra.contentWindow.focus();       // Set focus.
+                    objFra.contentWindow.print();       // Print it.
+                }
+            </script>
+            <h2>Print your own handout</h2>
+            <button type="button" class="btn btn-primary btn-lg" onclick="print('resources/Handout.pdf')">Print handout</button>
+            <br>
+            <p>Look at the printing terms on top right &#8599;</p>
+        </section>
+    </div>
+    <div class="slides" id="endslide">
+        <section>
+            <h1>Hope you enjoyed our <br> presentation ❤️</h1>
+            <br>
+            <p>You can download our handout here : <a href="https://github.com/Unk3wn/TaskHub---Codebase/blob/master/docs/resources/Handout.pdf">Click me!</a></p>
+            <br>
+            <br>
+            <p>Also feel free to look in our <a target="_blank" href="https://raw.githubusercontent.com/Unk3wn/TaskHub---Codebase/master/docs/midterm.html">Presentation source code</a> and <a target="_blank" href="https://revealjs.com/">reveal.js</a></p>
+        </section>
+    </div>
+    <!-- NO CHANGING AFTER HERE -->
+</div>
+<div id="scripts">
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            showNotes: "true",
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+        Reveal.on( 'slidechanged', event => {
+            if(event.indexh == 6 || event.indexh < 5){
+                document.getElementById("header").innerHTML = "";
+            }
+            if(event.indexh == 5){
+                document.getElementById("header").innerHTML = maintainer+headOfIT+businessClient+clientUser;
+            }
+            //Troll for PDF Printing
+            if (event.indexh == 20){
+                document.getElementById("troll").innerHTML = 'Today for only 99,99€  and <br> your paper + ink + printer';
+            }
+            if (event.indexh == 21 || event.indexh == 19){
+                document.getElementById("troll").innerHTML = "";
+            }
+
+            //#####################################################
+            if (event.indexh == 99){
+                document.getElementById("persons").innerHTML = henningIcon;
+            }
+            if (event.indexh == 99){
+                document.getElementById("persons").innerHTML = paddyIcon;
+            }
+            if (event.indexh == 99){
+                document.getElementById("persons").innerHTML = jegorIcon;
+            }
+        } );
+    </script>
+</div>
+</body>
+</html>
