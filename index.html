@@ -114,7 +114,7 @@
     <div id="troll" class='troll'></div>
     <div id="header" class="header">
     </div>
-    <div id="persons" class="persons"><script>document.write(paddyIcon)</script></div>
+    <div id="persons" class="persons"><script>document.write(henningIcon)</script></div>
     <!-- Slides -->
     <div class="slides" id="introduction">
         <!-- Introduction -->
@@ -475,7 +475,16 @@
             if (event.indexh == 7){
                 document.getElementById("persons").innerHTML = henningIcon;
             }
-            if (event.indexh == 10 && event.indexv == 2){
+            if (event.indexh == 11){
+                document.getElementById("persons").innerHTML = paddyIcon;
+            }
+            if (event.indexh == 12 && event.indexv == 2){
+                document.getElementById("persons").innerHTML = jegorIcon;
+            }
+            if (event.indexh == 12 && event.indexv == 3){
+                document.getElementById("persons").innerHTML = paddyIcon;
+            }
+            if (event.indexh == 16){
                 document.getElementById("persons").innerHTML = jegorIcon;
             }
             if (event.indexh == 99){
