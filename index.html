@@ -67,14 +67,14 @@
 <body>
 <div class="scriptsVARIABLES">
     <script>
-        let maintainer = "&#128295;"; // 🔧
-        let headOfIT = "&#128081;"; // 👑
-        let businessClient = "&#128188;"; // 💼
-        let clientUser = "&#128118;"; // 👶
+        let maintainer = "&#128295;"; //
+        let headOfIT = "&#128081;"; //
+        let businessClient = "&#128188;"; //
+        let clientUser = "&#128118;"; //
 
-        let paddyIcon = "&#128024;"; // 🐘
-        let henningIcon = "&#129433;"; // 🦙
-        let jegorIcon = "&#128373;"; // 🕵️
+        let paddyIcon = "&#9760;"; //
+        let henningIcon = "&#9875;"; //
+        let jegorIcon = "&#128170;"; //
     </script>
 </div>
 <div class="reveal">
@@ -470,17 +470,22 @@
             if(event.indexh == 5){
                 document.getElementById("header").innerHTML = maintainer+headOfIT+businessClient+clientUser;
             }
-            //Troll for PDF Printing
-            if (event.indexh == 20){
-                document.getElementById("troll").innerHTML = 'Today for only 99,99€  and <br> your paper + ink + printer';
-            }
-            if (event.indexh == 21 || event.indexh == 19){
-                document.getElementById("troll").innerHTML = "";
-            }
 
             //#####################################################
-            if (event.indexh == 99){
+            if (event.indexh == 7){
                 document.getElementById("persons").innerHTML = henningIcon;
+            }
+            if (event.indexh == 11){
+                document.getElementById("persons").innerHTML = paddyIcon;
+            }
+            if (event.indexh == 12 && event.indexv == 2){
+                document.getElementById("persons").innerHTML = jegorIcon;
+            }
+            if (event.indexh == 12 && event.indexv == 3){
+                document.getElementById("persons").innerHTML = paddyIcon;
+            }
+            if (event.indexh == 16){
+                document.getElementById("persons").innerHTML = jegorIcon;
             }
             if (event.indexh == 99){
                 document.getElementById("persons").innerHTML = paddyIcon;
